@@ -88,7 +88,7 @@ class Matrix{
             return result;
 		}
 
-        //template<typename std::enable_if<std::equal<R,C>::value>::type* = nullptr>
+        //Gauss Elimination matrix inverse algorithm
 		Matrix<T,R,C> inverse(){
             Matrix<T,R,C + C> withUnit = createNewMatrix<R,C + C>();
             for(size_t i = 0 ; i < C; i++){
